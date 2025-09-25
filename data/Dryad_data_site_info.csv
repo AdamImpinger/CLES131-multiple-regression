@@ -1,0 +1,142 @@
+,site_code,site_name,Data,continent,country,habitat.type,precip,arid
+1,allmendb.ch,Allmend Brachy,"Biomass, cover",Europe,CH,Grassland,957,1.521999955
+2,allmendo.ch,Allmend Ovina,"Biomass, cover",Europe,CH,Grassland,957,1.521999955
+3,amtvik.se,Amtvik,"No data, waiting to submit their manuscripts",Europe,SE,,NA,NA
+4,antelope.us,Antelope,"Biomass, cover",North America,US,Grassland,215,NA
+5,ayora.es,Ayora Experimental Station,"Biomass, cover",Europe,ES,Shrubland,381.3,0.458999991
+6,baddrt.de,Bad Drought,"Biomass, cover",Europe,DE,Grassland,488.6,0.703000009
+7,bamboo.cn,Bamboo drought China,"Biomass, cover",Asia,CN,Forest,1141.7,1.10800004
+8,bange.cn,GCN-Bange,"Biomass, cover",Asia,CN,Grassland,428,0.395999998
+9,bayrdrt.de,Bayreuth_DroughtNet,"Biomass, cover",Europe,DE,Grassland,724,0.990999997
+10,bfl.us,BFL,"Biomass, cover",North America,US,Grassland,860.5334792,NA
+11,biddulph.ca,Biddulph,"Biomass, cover",North America,CA,Grassland,353.7,0.416000009
+12,bivensarm.us,Bivens Arm,"Biomass, cover",North America,US,Forest understory,1288,0.944000006
+13,bldrdrt.us,Boulder Drought,"Biomass, cover",North America,US,Grassland,487.7,0.351000011
+14,brandjberg.dk,Brandbjerg,"Biomass, cover",Europe,DK,Shrubland,742,0.986000001
+15,brokenh.au,Broken Hill,"Biomass, cover",Australia,AU,Grassland,283,0.143999994
+16,brookdale.ca,Brookdale,"Biomass, cover",North America,CA,Grassland,474.2,0.601000011
+17,buoya.no,Store Buoya,"Biomass, cover",Europe,NO,Shrubland,1766,NA
+18,capmcd.us,McDowell Mountain,"Biomass, cover",North America,US,Shrubland,204,0.141000003
+19,capwhite.us,White Tank Mountain,"Biomass, cover",North America,US,Shrubland,204,0.085000001
+20,cdpt_drt.us,Cedar Point,"Biomass, cover",North America,US,Grassland,473.964,NA
+21,cedarsav.us,Cedar Creek Savanna,"Biomass, cover",North America,US,Grassland,682,0.746999979
+22,cedartrait.us,Cedar Creek Trait ,"Biomass, cover",North America,US,Grassland,682,0.746999979
+23,cerrillos.ar,Los Cerrillos,"Biomass, cover",South America,AR,Shrubland,390,0.312000006
+24,chacra.ar,Chacra Experimental Patagones,"Biomass, cover",South America,AR,Shrubland,400,0.268999994
+25,chang.cn,Changling,"Biomass, cover",Asia,CN,Grassland,444.9,NA
+26,charleville.au,Charleville,"Biomass, cover",Australia,AU,Grassland,451,0.225999996
+27,chilcasdrt.ar,Las Chilcas Drt,"Biomass, cover",South America,AR,Grassland,950,0.848999977
+28,ciempoz.es,Ciempozuelos,"Biomass, cover",Europe,ES,Shrubland,363.6,0.337000012
+29,cmss.us,CMSS,"Biomass, cover",North America,US,Forest understory,690,0.244000003
+30,cobar.au,Cobar,"Biomass, cover",Australia,AU,Grassland,354,0.243000001
+31,cowidrt.ca,Cowichan Drt,"Biomass, cover",North America,CA,Grassland,1134,1.718999982
+32,credoj.au,CredoJ,"Biomass, cover",Australia,AU,Shrubland,259.6,NA
+33,credom.au,CredoM,"Biomass, cover",Australia,AU,Shrubland,259.6,NA
+34,dang.cn,GCN-Dangxiong,"Biomass, cover",Asia,CN,Grassland,419,0.426999986
+35,ebro.es,Middle Ebro Valley,"Biomass, cover",Europe,ES,Shrubland,385,0.338
+36,eea.br,EEA,"Biomass, cover",South America,BR,Grassland,1440,1.238999963
+37,elizwood.us,Elizabeth Woods,"Biomass, cover",North America,US,Forest,1219,NA
+38,elvadrt.ee,EE Elva,"Biomass, cover",Europe,EE,Grassland,680,NA
+39,esw.ca,ESW,"Biomass, cover",North America,CA,Grassland,1011.5,1.264000058
+40,ethadb.au,Ethabuka_DNB,"Biomass, cover",Australia,AU,Grassland,193,0.085000001
+41,ethadn.au,Ethabuka_DNU,"Biomass, cover",Australia,AU,Grassland,193,0.085000001
+42,falls.au,Falls Creek,"Biomass, cover",Australia,AU,Grassland,1239,1.720000029
+43,freiburg.de,Freiburg,"Biomass, cover",Europe,DE,Grassland,934,1.17900002
+44,garraf.es,Garraf,"Biomass, cover",Europe,ES,Shrubland,548.4,0.587000012
+45,gigante.pa,Gigante,"Biomass, cover",North America,PA,Forest,2332.148,NA
+46,gmgranite.us,Granite Cover,"Biomass, cover",North America,US,Shrubland,220,0.107000001
+47,gmmolar.us,Molar Junction,"Biomass, cover",North America,US,Shrubland,220,0.107000001
+48,guaribas.br,Guaribas,"Biomass, cover",South America,BR,Grassland,1908,0.976999998
+49,haibei.cn,GCN-Haibei,"Biomass, cover",Asia,CN,Grassland,469,0.541000009
+50,hard.us,Hardware Ranch,"Biomass, cover",North America,US,Shrubland,462,0.400999993
+51,haver.no,Haveroya,"Biomass, cover",Europe,NO,Shrubland,1341,2.878999949
+52,hoelstein.ch,Hoelstein,No data,Europe,CH,Forest,1009,NA
+53,hoide.de,HOIDE,"Biomass, cover",Europe,DE,Shrubland,541.15,NA
+54,hong.cn,GCN-Hongyuan,"Biomass, cover",Asia,CN,Grassland,703,0.833000004
+55,horizon.cr,Horizontes ACG,"Biomass, cover",North America,CR,Forest,1707.572316,NA
+56,hubbard.us,Hubbard Brook,"Biomass, cover",North America,US,Forest,1258,1.396999955
+57,hulun.cn,GCN-Hulunber,"Biomass, cover",Asia,CN,Grassland,360,0.555000007
+58,hyide.de,HYIDE,"Biomass, cover",Europe,DE,Shrubland,541.15,NA
+59,indiana.us,Indiana University Research and Teaching Preserve,Cover,North America,US,Forest,1086,NA
+60,jenadrt.de,Jena,"Biomass, cover",Europe,DE,Grassland,596.5233333,0.93599999
+61,jilpanger.au,Jilpanger,"Biomass, cover",Australia,AU,Forest understory,497,0.402999997
+62,jorndrt.us,Jornada_LTER Drt,"Biomass, cover",North America,US,Grassland,241.88,0.144999996
+63,jrnchi.us,JRN_Chihuahuan,"Biomass, cover",North America,US,Shrubland,246.6,NA
+64,kernb.ca,Kernen_burned,"Biomass, cover",North America,CA,Grassland,353.7,0.442999989
+65,kernnu.ca,Kernen_unburned,"Biomass, cover",North America,CA,Grassland,353.7,0.442999989
+66,kinsella.ca,Kinsella,"Biomass, cover",North America,CA,Grassland,406.24,0.593999982
+67,kiskun.hu,Kiskunsag,"Biomass, cover",Europe,HU,Grassland,596,0.623000026
+68,konzadrt.us,Konza,"Biomass, cover",North America,US,Grassland,830,0.674000025
+69,kranz.de,Kranzberg forest,"Biomass, cover",Europe,DE,Forest,791.3,1.220000029
+70,lcnorth.cl,La Campana North Facing,"Biomass, cover",South America,CL,Grassland,384,0.358999997
+71,lcsouth.cl,La Campana South Facing,"Biomass, cover",South America,CL,Grassland,384,0.358999997
+72,lygraint.no,Lygra intermediate,"Biomass, cover",Europe,NO,Shrubland,2234,5.109000206
+73,lygraold.no,Lygra old,"Biomass, cover",Europe,NO,Shrubland,2234,5.109000206
+74,lygrayng.no,Lygra young,"Biomass, cover",Europe,NO,Shrubland,2234,5.109000206
+75,marcdrt.ar,Mar Chiquita Drt,"Biomass, cover",South America,AR,Grassland,927.9,0.850000024
+76,matador.ca,Matador,"Biomass, cover",North America,CA,Grassland,358.4,0.368999988
+77,matta.il,Matta LTER,"Biomass, cover",Asia,IL,Shrubland,540,0.421000004
+78,mattheis.ca,Mattheis,"Biomass, cover",North America,CA,Grassland,329.11,0.384000003
+79,milparinka.au,Milparinka,"Biomass, cover",Australia,AU,Grassland,192,0.104000002
+80,morient.ar,Monte Oriental,"Biomass, cover",South America,AR,Shrubland,382.7,0.217999995
+81,mpgranch.us,MPG Ranch,"Biomass, cover",North America,US,Grassland,344.9,NA
+82,naposta.ar,Naposta,"Biomass, cover",South America,AR,Grassland,553,0.518999994
+83,naqu.cn,GCN-Naqu,"Biomass, cover",Asia,CN,Grassland,430,0.497999996
+84,neudamm.na,Neudamm,"Biomass, cover",Africa,NA,Grassland,370,0.263999999
+85,nnss.us,NNSS_Mojave,"Biomass, cover",North America,US,Shrubland,132.8,NA
+86,noor.ir,Noor,"Biomass, cover",Asia,IR,Grassland,1200.6,NA
+87,nplatte.us,North Platte,"Biomass, cover",North America,US,Shrubland,305,0.224999994
+88,nyngan.au,Nyngan,"Biomass, cover",Australia,AU,Grassland,441,0.277999997
+89,octc.us,OCTC_GreatBasin,"Biomass, cover",North America,US,Shrubland,297.9,NA
+90,oklah.us,Oklahoma (KAEFS-OK),"Biomass, cover",North America,US,Grassland,880,0.529999971
+91,oreaa.us,ORE IDE AA,"Biomass, cover",North America,US,Shrubland,497,0.495999992
+92,oreac.us,ORE IDE AC,"Biomass, cover",North America,US,Shrubland,497,0.495999992
+93,p12.pa,P12,"Biomass, cover",North America,PA,Forest,2595.041,NA
+94,p13.pa,P13,"Biomass, cover",North America,PA,Forest,2590.691,NA
+95,paike.ar,Potrok Aike Drt,"Biomass, cover",South America,AR,Grassland,202,0.344999999
+96,passogavia.it,Passo Gavia,"Biomass, cover",Europe,IT,Grassland,1281,1.639000058
+97,pineta.es,Pineta,"Biomass, cover",Europe,ES,Grassland,1356.602,1.396999955
+98,plattev.us,University of Wisconsin-Platteville Greenhouses,"Biomass, cover",North America,US,Grassland,961.6,0.897000015
+99,pneburn.br,PNE_IDE Burned,"Biomass, cover",South America,BR,Grassland,1568.26,1.174000025
+100,pneunburn.br,PNE_IDE Unburned,"Biomass, cover",South America,BR,Grassland,1568.26,1.174000025
+101,pozos.ar,los_pozos,"Biomass, cover",South America,AR,Grassland,244,0.216999993
+102,prades.es,Prades (Spain),"Biomass, cover",Europe,ES,Forest,654,0.569000006
+103,purdue.us,Purdue Wildlife Area,"Biomass, cover",North America,US,Grassland,950,0.897000015
+104,qdtnorth.cl,Quebrada de Talca North Facing,"Biomass, cover",South America,CL,Shrubland,195,0.104999997
+105,qdtsouth.cl,Quebrada de Talca South Facing,"Biomass, cover",South America,CL,Shrubland,195,0.104999997
+106,quilpie.au,Quilpie,"Biomass, cover",Australia,AU,Grassland,354,0.166999996
+107,rhijn.nl,Rhijnauwen,"Biomass, cover",Europe,NL,Grassland,796.92,1.261999965
+108,riomayo.ar,Rio Mayo,"Biomass, cover",South America,AR,Shrubland,155,0.221000001
+109,sand.us,Sandhills,"Biomass, cover",North America,US,Grassland,1202,NA
+110,sclaudio.ar,San Claudio,"Biomass, cover",South America,AR,Grassland,950,0.869000018
+111,scruzh.us,SantaCruzHigh,"Biomass, cover",North America,US,Grassland,745,0.667999983
+112,scruzl.us,SantaCruzLow,"Biomass, cover",North America,US,Grassland,745,0.661000013
+113,scruzm.us,SantaCruzMiddle,"Biomass, cover",North America,US,Grassland,745,0.661000013
+114,sedgwick.us,Sedgwick Reserve,"Biomass, cover",North America,US,Grassland,380,0.393999994
+115,sevblack.us,Sevilleta_Black,"Biomass, cover",North America,US,Grassland,249,NA
+116,sevblue.us,Sevilleta_Blue,"Biomass, cover",North America,US,Grassland,255,NA
+117,sevforest.us,Sevilleta Forest,"Biomass, cover",North America,US,Forest,347,0.165999994
+118,sevmixed.us,Sevilleta_Mixed,"Biomass, cover",North America,US,Grassland,234,NA
+119,sgsdrt.us,Shortgrass Steppe Drt,"Biomass, cover",North America,US,Grassland,341,0.287
+120,sherman.pa,ShermanCrane,"Biomass, cover",North America,PA,Forest,3300,NA
+121,skotsvar.no,Skotsvaer,"Biomass, cover",Europe,NO,Shrubland,1766,NA
+122,slp.us,SLP,"Biomass, cover",North America,US,Grassland,930.7024634,NA
+123,sonora.us,Sonora Agrilife Research Station,"Biomass, cover",North America,US,Grassland,567.9,0.296000004
+124,spvdrt.ar,San Pablo Valdes Drt,"Biomass, cover",South America,AR,Grassland,220.6,0.122000001
+125,stubai.at,Stubai,"Biomass, cover",Europe,AT,Grassland,1100,2.108999968
+126,suiha.cn,GCN-Suiha,Cover (advised not to use biomass for this site),Asia,CN,Grassland,NA,NA
+127,swift.ca,Swift Current (Dry Mixed Grass),"Biomass, cover",North America,CA,Grassland,365.6,0.430999994
+128,syferkuil.za,Syferkuil (DroughtAct Limpopo),"Biomass, cover",Africa,ZA,Grassland,478,0.444000006
+129,teshio.jp,Teshio Experimental Grassland,"Biomass, cover",Asia,JP,Grassland,1108.206,1.914999962
+130,thompson.us,Thompson Farm,"Biomass, cover",North America,US,Forest,1082,1.125
+131,torla.es,Torla,"Biomass, cover",Europe,ES,Grassland,1405.357,1.340000033
+132,tovetorp.se,Tovetorp,"No data, waiting to submit their manuscripts",Europe,SE,,NA,NA
+133,ukulingadrt.za,Ukulinga IDE,"Biomass, cover",Africa,ZA,Grassland,732.6,0.748000026
+134,urat.cn,GCN-Urat,"Biomass, cover",Asia,CN,Grassland,152,0.152999997
+135,validate.fr,Validate,"Biomass, cover",Europe,FR,Grassland,790,0.964999974
+136,wayqecha.pe,Wayqecha,"Biomass, cover",South America,PE,Forest,1761,0.52700001
+137,wytham.uk,Wytham_RainDrop,"Biomass, cover",Europe,UK,Grassland,743.6,1.049000025
+138,xilin.cn,GCN-Xilinhot,"Biomass, cover",Asia,CN,Grassland,338,0.38499999
+139,yanchi.cn,GCN-Yanchi,"Biomass, cover",Asia,CN,Grassland,337,0.360000014
+140,yarradrt.au,Yarramundi Drt,"Biomass, cover",Australia,AU,Grassland,800,0.714999974
+141,youyu.cn,GCN-Youyu,"Biomass, cover",Asia,CN,Grassland,390,0.504999995
