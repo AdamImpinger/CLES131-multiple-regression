@@ -3,26 +3,28 @@
 
 library(tidyverse)
 
+#### Wrangling data ####
 # Figure 3 regression predictors
 map <- read_csv("data/datappt_MAP2.csv") |> 
   select(-1, -X)
-prior_ppt <- read_csv("data/datappt_pryr.csv")|> 
+prior_ppt <- read_csv("data/datappt_pryr.csv") |> 
   select(-1)
-map_cv <- read_csv("data/Dryad_submission_datappt_cv2.csv")|> 
+map_cv <- read_csv("data/Dryad_submission_datappt_cv2.csv") |> 
   select(-1)
-ai <- read_csv("data/datappt_ai3.csv")|> 
+ai <- read_csv("data/datappt_ai3.csv") |> 
   select(-1)
-sand <- read_csv("data/Dryad_submission_datapptsand2.csv")|> 
+sand <- read_csv("data/Dryad_submission_datapptsand2.csv") |> 
   select(-1)
-graminoid <- read_csv("data/Dryad_submission_gram.ave.csv")|> 
+graminoid <- read_csv("data/Dryad_submission_gram.ave.csv") |> 
   select(-1)
-richness <- read_csv("data/Dryad_submission_datappt_rich2.csv")|> 
+richness <- read_csv("data/Dryad_submission_datappt_rich2.csv") |> 
   select(-1)
 
-# Drought severity
-data_Drtsite <- read_csv("data/data.Drtsite.csv")
+# Figure 4 drought severity
+drought_severity <- read_csv("data/data.Drtsite.csv") |> 
+  select(-1)
 
-# Habitat type and drought response (mean_DS3) of each site
+# Create full dataset from above
 data_all <- read_csv("data/data.hab.csv") |> 
   select(-1) |> 
   rename(habitat_type = habitat.type) |> 
@@ -40,13 +42,16 @@ data_all <- read_csv("data/data.hab.csv") |>
               select(site_code, prop.ave)) |> 
   left_join(richness |> 
               select(site_code, average.richness)) |> 
-  rename(DR = mean_DS3,
+  left_join(drought_severity|> 
+              select(site_code, mean_drt2)) |> 
+  rename(DR = mean_DS3, # Drought response
          MAP = precip,
          prev_precip = drtpct_map730,
          MAP_cv = cv_ppt_inter,
          lnAridity = logAI,
          gram_prop = prop.ave,
-         rich_mean = average.richness)
+         rich_mean = average.richness,
+         DS = mean_drt2) # Drought severity
 
 
 
@@ -60,9 +65,18 @@ summary(m_map)
 
 # Inverse texture hypothesis
 
-m_inv_tex <- lm(DR ~ MAP*sand_mean, data = data_all)
+m_inv_tex <- lm(DR ~ MAP * sand_mean, data = data_all)
 summary(m_inv_tex)
 
 # Is there statistical support for the inverse texture hypothesis?
 
+# Replicate Fig 4
 
+m_ds <- lm(DR ~ DS, data = data_all)
+summary(m_ds)
+
+
+# Replicate Table S8
+m_multiple <- lm(DR ~ DS + MAP + prev_precip + gram_prop + MAP_cv + sand_mean,
+                 data = data_all)
+summary(m_multiple)

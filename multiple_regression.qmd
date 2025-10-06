@@ -1,0 +1,125 @@
+---
+title: "Exploring drought effects with regression"
+format: pdf
+---
+
+# Synthesis from the International Drought experiment
+
+We are going to replicate some of the regressions and figures from Smith et al. 2024. This PNAS paper was published with a link to Dryad, a popular data repository in ecology community run on FAIR principles. FAIR stands for Findable, Accessible, Interoperable, and Reusable. 
+
+### Q1
+The full contents of the Dryad repository are in `data/`. From either the README or .R file, can  you tell what types of information are in each .csv? How would you assess the repository in light of the FAIR criteria?
+
+
+## Wrangling data
+
+Since the goal of this exercise is to use linear regression and practice plotting, I have provided the code below for wrangling the data into a single dataframe:
+
+```{r}
+#| echo: false
+library(tidyverse)
+
+# Figure 3 regression predictors
+map <- read_csv("data/datappt_MAP2.csv") |> 
+  select(-1, -X)
+prior_ppt <- read_csv("data/datappt_pryr.csv") |> 
+  select(-1)
+map_cv <- read_csv("data/Dryad_submission_datappt_cv2.csv") |> 
+  select(-1)
+ai <- read_csv("data/datappt_ai3.csv") |> 
+  select(-1)
+sand <- read_csv("data/Dryad_submission_datapptsand2.csv") |> 
+  select(-1)
+graminoid <- read_csv("data/Dryad_submission_gram.ave.csv") |> 
+  select(-1)
+richness <- read_csv("data/Dryad_submission_datappt_rich2.csv") |> 
+  select(-1)
+
+# Figure 4 drought severity
+drought_severity <- read_csv("data/data.Drtsite.csv") |> 
+  select(-1)
+
+# Create full dataset from above
+data_all <- read_csv("data/data.hab.csv") |> 
+  select(-1) |> 
+  rename(habitat_type = habitat.type) |> 
+  left_join(map) |> 
+  relocate(precip, .after = Sig) |> 
+  left_join(prior_ppt |> 
+              select(site_code, drtpct_map730)) |> 
+  left_join(map_cv |> 
+              select(site_code, cv_ppt_inter)) |> 
+  left_join(ai |> 
+              select(site_code, logAI)) |> 
+  left_join(sand|> 
+              select(site_code, sand_mean)) |> 
+  left_join(graminoid |> 
+              select(site_code, prop.ave)) |> 
+  left_join(richness |> 
+              select(site_code, average.richness)) |> 
+  left_join(drought_severity|> 
+              select(site_code, mean_drt2)) |> 
+  rename(DR = mean_DS3, # Drought response
+         MAP = precip,
+         prev_precip = drtpct_map730,
+         MAP_cv = cv_ppt_inter,
+         lnAridity = logAI,
+         gram_prop = prop.ave,
+         rich_mean = average.richness,
+         DS = mean_drt2) # Drought severity
+```
+
+## Univariate drivers of drought response (Fig. 3)
+
+### Q2
+Recall previous notes on running simple linear regressions using `lm()`. Replicate all of the simple linear regressions in Fig. 3. 
+ 
+```{r}
+
+```
+
+Do your outputs match those of the published figure?
+
+### Q3 (optional)
+From the published R code, it appears that Fig. 3 was made in separate pieces. Recreate the figure to the best of your ability with a single code chunk, using `facet_wrap()`. 
+ 
+```{r}
+
+```
+
+## Testing the Inverse Texture hypothesis
+See Prof. Guo's slides on the inverse texture hypothesis. Under this hypothesis, there should be a significant interaction term between which two variables?
+
+
+### Q4
+Conduct a multiple regression to test the inverse texture hypothesis. Is there statistical support?
+
+```{r}
+
+```
+
+## Importance of drought severity (Fig. 4)
+
+### Q5
+Replicate the simple linear regression in Fig. 4. 
+
+```{r}
+
+```
+
+How much variation in drought response is explained by drought severity? How does this compare to the coefficient of determination (R^2) of the predictors in Fig. 3?
+
+### Q6
+It can be unsatisfying to run numerous simple linear regressions. We also increase the risk of Type I error, meaning that due to the large number of hypothesis tests, we are more likely to see a false positive even if that relationship isn't truly significant. 
+
+In the supplement Table S8, Smith et al. 2024 show the output of a multiple regression. Replicate this below. 
+
+```{r}
+
+```
+
+How much more variation in drought response is predicted by this ensemble of predictor variables? 
+
+Which variable does the heavy lifting, and how does this compare to the results of the simple linear regression?
+
+
