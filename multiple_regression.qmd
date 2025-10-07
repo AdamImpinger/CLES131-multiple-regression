@@ -122,4 +122,13 @@ How much more variation in drought response is predicted by this ensemble of pre
 
 Which variable does the heavy lifting, and how does this compare to the results of the simple linear regression?
 
+### Bonus
+When there are multiple possible predictor variables to choose from, we can use model selection methods to identify the 'best' overall model. 'Best' cannot be only based on high R^2 values, as that would promote overfitting such that conclusions are unlikely to be applicable to a new context. Therefore, 'best' is often determined by the tradeoff between high model fit and low model complexity. Often, the target statistic to minimize is an information criterion, which consists of two components:
 
+$IC = likelihood - penalty$ 
+
+where the likelihood is a metric of model fit and the penalty is a meetric of model complexity. One common information criterion you may encounter is the AIC, or Akaike Information Criterion:
+
+$AIC = -2ln(L) + 2k$
+
+where ln(L) is the log-likelihood and k is the number of parameters in the model. 
