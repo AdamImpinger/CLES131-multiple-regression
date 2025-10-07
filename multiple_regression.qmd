@@ -122,13 +122,30 @@ How much more variation in drought response is predicted by this ensemble of pre
 
 Which variable does the heavy lifting, and how does this compare to the results of the simple linear regression?
 
-### Bonus
+
+### Bonus 1
+One common consideration in multiple regression is multicollinearity of the predictor variable. Look up the documentation for `pairs()` and use it on all of the predictor columns in `data_all`. Which predictors are strongly correlated? What does this suggest about their usage in a multiple regression model?
+
+```{r}
+
+```
+
+
+### Bonus 2
 When there are multiple possible predictor variables to choose from, we can use model selection methods to identify the 'best' overall model. 'Best' cannot be only based on high R^2 values, as that would promote overfitting such that conclusions are unlikely to be applicable to a new context. Therefore, 'best' is often determined by the tradeoff between high model fit and low model complexity. Often, the target statistic to minimize is an information criterion, which consists of two components:
 
 $IC = likelihood - penalty$ 
 
-where the likelihood is a metric of model fit and the penalty is a meetric of model complexity. One common information criterion you may encounter is the AIC, or Akaike Information Criterion:
+where the likelihood is a metric of model fit and the penalty is a metric of model complexity. The adjusted $R^2$ in the `lm()` output is one such IC. Another common information criterion you may encounter is the AIC, or Akaike Information Criterion:
 
 $AIC = -2ln(L) + 2k$
 
-where ln(L) is the log-likelihood and k is the number of parameters in the model. 
+where ln(L) is the log-likelihood and k is the number of parameters in the model. A model with a smaller AIC value is deemed 'better' at predicting new data than a model with a larger AIC value, given the same response variable being modeled. 
+
+You may use `AIC()` on your model object to determine the AIC value. Try a backward selection approach (using all predictors available) and sequentially reduce number of predictors (removing the highest p-value) until the model's AIC stops decreasing. How does this model compare to the multiple regression model used by Smith et al. (2024)?
+
+```{r}
+
+```
+
+
