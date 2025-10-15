@@ -9,6 +9,12 @@ We are going to replicate some of the regressions and figures from Smith et al. 
 
 ### Q1
 The full contents of the Dryad repository are in `data/`. From either the README or .R file, can  you tell what types of information are in each .csv? How would you assess the repository in light of the FAIR criteria?
+findable acessable interoperable resuable
+
+I would say yes. Hard to assess findable because we did not find the data ourselves. 
+However it does seem to be accessable considering we are accessing it.
+It is interoperable, there is a program that is used to create scripts etc.
+Reusable, also yes. 
 
 
 ## Wrangling data
@@ -75,7 +81,13 @@ data_all <- read_csv("data/data.hab.csv") |>
 Recall previous notes on running simple linear regressions using `lm()`. Replicate all of the simple linear regressions in Fig. 3. 
  
 ```{r}
-
+lm(data_all$MAP~data_all$DR)
+lm(data_all$prev_precip~data_all$DR)
+lm(data_all$MAP_cv~data_all$DR)
+lm(data_all$lnAridity~data_all$DR)
+lm(data_all$sand_mean~data_all$DR)
+lm(data_all$gram_prop~data_all$DR)
+lm(data_all$rich_mean~data_all$DR)
 ```
 
 Do your outputs match those of the published figure?
@@ -84,7 +96,17 @@ Do your outputs match those of the published figure?
 From the published R code, it appears that Fig. 3 was made in separate pieces. Recreate the figure to the best of your ability with a single code chunk, using `facet_wrap()`. 
  
 ```{r}
+ 
+a <- data_all |> 
+  pivot_longer(cols = MAP:DS,
+                  names_to = "xaxes", values_to = "value")
 
+p <- ggplot(data = a, mapping = aes(x = value, y = DR)) + 
+  geom_point() +
+  geom_smooth(method = "lm")+
+
+facet_wrap( ~ xaxes, scales = "free")
+p
 ```
 
 ## Testing the Inverse Texture hypothesis
